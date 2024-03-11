@@ -1,8 +1,133 @@
+<!DOCTYPE html>
 <html>
-    <body style="text-align:center;margin-top:200px;">
-        <h1>Hello World</h1>
-        <h2>If Monalisa could speak, she would admit that your smile is more beautiful than hers!! </h2>
-        <h2>Good Morning!</h2>
-    </body>
-</html>
 
+<head>
+    <title>Hitesh Ram Kotha</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        $(function () {
+            $(".hamburger").click(function () {
+                $(".nav-bar-right").toggleClass("active");
+            });
+        });
+    </script>
+    <style>
+        html,
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Roboto", sans-serif
+        }
+    </style>
+</head>
+
+<body onload="loadQuote();loadFact();">
+    <div class="wrapper">
+        <div class="nav-bar">
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="nav-bar-left">
+                <a href="#">Welcome</a>
+            </div>
+            <div class="nav-bar-right">
+                <ul>
+                    <li> <a href="index.html" class="active">Home</a></li>
+                    <li> <a href="#venue">Venue</a></li>
+                    <li> <a href="#liveStreaming">Live Streaming</a></li>
+                    <li> <a href="#">Invitation</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section class="invitation">
+            <div class="invitation-title">
+                Wedding Invitation
+            </div>
+            <div class="invitation-body">
+                You are cordially invited to celebrate the wedding of
+            </div>
+        </section>
+        <section class="bride-groom">
+            <div class="groom">
+                <div class="groom-name">
+                    Hitesh Ram Kotha
+                </div>
+                <div class="groom-desc">
+                    <p>Son of<br />Sri Kotha Meghanath & Smt. Nagamani</p>
+                </div>
+            </div>
+            <div class="groom-img">
+                <img src="images/groom.png" alt="groom" class="img-responsive">
+            </div>
+            <div class="heart">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
+            </div>
+            <div class="bride-img">
+                <img src="images/bride.png" alt="groom" class="img-responsive">
+            </div>
+            <div class="bride">
+                <div class="bride-name">
+                    Sai Prathyusha Nimmagadda
+                </div>
+                <div class="bride-desc">
+                    <p>Elder Daughter of<br />Sri Nimmagadda Jayarama Venkata Durga Kishore & Smt. Kali Siva
+                        Tripura Sundari</p>
+                </div>
+            </div>
+        </section>
+        <section class="venue" id="venue">
+            <div class="invitation-body">
+                on 31st March, at 8:54 PM.
+            </div>
+            <div class="venue-title">
+                Venue
+            </div>
+            <br />
+            <div class="invitation-body">
+                Sitara Convention Hall, Vijayawada - 12
+            </div>
+            <br/>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3824.8328063797853!2d80.60324977588688!3d16.53453628421446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35efc0a7ce43b5%3A0xb8a92d9c1aec6cd6!2sSitara%20Convention%20Hall!5e0!3m2!1sen!2sus!4v1710101667859!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section class="live-streaming" id="liveStreaming">
+            <div class="live-streaming-title">
+                Live Streaming
+            </div>
+            <br/>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0PF2u5TZG1s?si=XjUM9ifT4rULYVFC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <br />
+            <br/>
+        </section>
+    </main>
+    <footer>
+        <center>
+            <p>Reach out to me</p>
+            <p><a href="https://www.facebook.com/hiteshram.kotha" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/hiteshramk" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://www.linkedin.com/in/hitesh-ram-kotha-9090947a/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=917550090095" target="_blank"><i
+                        class="fab fa-whatsapp-square"></i></a>
+                <a href="https://plus.google.com/u/0/104418944086152872796" target="_blank"><i
+                        class="fab fa-google-plus-square"></i></a>
+            </p>
+        </center>
+    </footer>
+</body>
