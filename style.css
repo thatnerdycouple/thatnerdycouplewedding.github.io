@@ -77,8 +77,8 @@ main{
     font-size: 48px;
     font-weight: 600;
     font-style: normal;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 1em;
+    margin-bottom: 1em;
     align-self:center;
 }
 
@@ -140,9 +140,12 @@ main{
   }
 
   .heart{
-    width:5%;
-    display:flex;
+    font-family: "Sacramento", Arial, serif;
     color:#F14E95;
+    font-size: 36px;
+    font-weight: 400;
+    font-style: normal;
+    align-self:center;
     margin-left:1em;
     margin-right:1em;
   }
@@ -171,21 +174,31 @@ main{
         font-size: 36px;
         font-weight: 600;
         font-style: normal;
-        margin-top: 5%;
+        margin-top: 1em;
         align-self:center;
   }
 
   .live-streaming{
-    margin-top:2em;
+    margin-top:1.5em;
     display:flex;
     flex-direction: column;
+  }
+
+  .best-wishes{
+    display:flex;
+    flex-direction:column;
+  }
+
+  iframe{
+    align-self:center;
   }
 
 footer{
     position:relative;
     background-color:#F14E95;
     color:whitesmoke;
-    padding-bottom:1%;
+    padding-bottom:2%;
+    padding-top:2%;
 }
 
 footer p{
@@ -200,6 +213,11 @@ footer a i{
 
 footer a:hover i{
     color:#1D2C3D;
+}
+
+.copyleft {
+    display:inline-block;
+    transform: rotate(180deg);
 }
 
     
@@ -248,199 +266,66 @@ footer a:hover i{
             margin-left:0.5%;
             margin-right:0.5%;
         }
-        
-        .left-pane{
+        .bride-groom{
             display:flex;
             flex-direction:column;
-            width:100%;
-            margin:0%;
-        }
-
-        .right-pane{
-            display:flex;
-            flex-direction:column;
-            width:100%;
-            margin:0%;
-        }
-
-        .profile-picture figure{
             margin-top:1%;
+            padding-top:1%;
         }
-        .bio{
-            margin-bottom:1%;
-        }
-        .quote{
-            margin-bottom:1%;
-            /* padding-right:5%; */
-        }
-        .quote h1{
+        
+        .groom, .bride{
+            display:flex;
+            flex-direction:column;
+            width:100%;
+            align-items: center;
             text-align: center;
-            color:#59C3C3;
-            background-color:#1D2C3D;
-            margin-top: 0;
-            padding-top: 3%;
-            padding-bottom:3%;
-            box-sizing: border-box;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
         }
-
-        .fact{
-            margin-bottom:1%;
-            /* padding-right:5%; */
-        }
-        .fact h1{
+        
+        .groom-name, .bride-name {
+            font-family: "Sacramento", Arial, serif;
+            color: #F14E95;
+            font-size: 36px;
+            font-weight: 400;
+            align-items:center;
             text-align: center;
-            color:#59C3C3;
-            background-color:#1D2C3D;
-            margin-top: 0;
-            padding-top: 3%;
-            padding-bottom:3%;
-            box-sizing: border-box;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
+        }
+        
+        .groom-desc, .bride-desc{
+            font-family: "Work Sans", Arial, sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.7;
+            color: #828282;
+            align-items:center;
+            text-align: center;
         }
 
-        #fod{
-            text-align:justify;
-        }
-
-        .affiliation-main{
+        .groom-img, .bride-img{
             display:flex;
-            flex-direction:column;
-            height:60%;
-            overflow:auto;
-            margin-left:0.5%;
-            margin-right:0.5%;
+            justify-content: center;
+            margin-top: 1em;
+            margin-bottom: 1em;
         }
-        /*
-        .affiliation-main{
+        
+        .groom-img img, .bride-img img {
+            width: 150px;
+            height: 150px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            border-radius: 50%;
+          }
+        
+          .heart{
+            width:5%;
             display:flex;
-            flex-direction:column;
-            flex-grow:1;
-            height:60%;
-            width:100%;
-            overflow:auto;
-            padding-left:1%;
-            padding-right:1%;
-        }
-        */
-        .affiliation-pane{
-            display:flex;
-            flex-direction:column;
-            width:100%;
-
-        }
-        .affiliation{
-            flex-basis: 100%;
-            margin:0.5%;
-            height:80%;
-            width:100%;
-        }
+            color:#F14E95;
+            align-self: center;
+          }
+          .heart svg{
+            align-self: center;
+          }
         
-        .affiliation-picture figure{
-            margin: 0px;
-            background-position: center;
-            background-size: cover;
-            width: 100%;
-            height: 250px;
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-        }
-        .affiliation-heading{
-            background-color:whitesmoke;
-            padding:2%;
-            margin-bottom:0.75%;
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-            border-bottom-left-radius: 15px;
-            border-bottom-right-radius: 15px;
-        }
-        
-        .affiliation-heading h3{
-            /*font-size:25px;*/
-        }
-        .affiliation-heading p{
-            margin-top:1%;
-            margin-bottom:1%;
-        }
-        
-        .affiliation-info p{
-            margin-top:0.5%;
-            margin-bottom:0.5%;
-            text-align: justify;
-        }
-        
-        .organization-pane{
-            display:flex;
-            flex-direction:column;
-            width:100%;
-        }
-        .organization{
-            flex-basis: 100%;
-            margin:0.5%;
-            height:80%;
-            width:100%;
-        }
-        
-        .organization-picture figure{
-            margin: 0px;
-            background-position: center;
-            background-size: cover;
-            width: 100%;
-            height: 250px;
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-        }
-        .organization-heading{
-            background-color:whitesmoke;
-            padding:2%;
-            margin-bottom:0.75%;
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-            border-bottom-left-radius: 15px;
-            border-bottom-right-radius: 15px;
-        }
-        
-        .organization-heading p{
-            margin-top:1%;
-            margin-bottom:1%;
-        }
-        
-        .organization-info p{
-            margin-top:0.5%;
-            margin-bottom:0.5%;
-            text-align: justify;
-        }
-
-        
-        .techstack{
-            margin-top:2%;
-            margin-bottom:2%;
-        }
-
-        .techstack h1{
-            padding-top: 3%;
-            padding-bottom:3%;
-        }
-        .work{
-            margin-top:1%;
-            margin-bottom:2%;
-        }
-        .work h1{
-            padding-top: 3%;
-            padding-bottom:3%;
-        }
-        .education{
-            margin-top:1%;
-            margin-bottom:2%;
-        }
-
-        .education h1{
-            padding-top: 3%;
-            padding-bottom:3%;
-        }
-    
     } 
 
 
